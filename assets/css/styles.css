@@ -1,0 +1,275 @@
+*{
+	margin:0;
+	padding:0;
+	vertical-align: top;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+									
+										/*MENU*/
+
+.menu li{
+	display: inline-block;
+}
+
+.menu a{
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: 'big-medium';
+	font-size: 14px;
+	color: white;
+	padding: 0 20px 0 20px;
+}
+
+.menu a:hover{
+	border-bottom: solid white;
+	padding-bottom: 25px;
+
+}
+
+.menu a:after{ /*con un htmlarrows y un after despues de los <a> consigo poner la flechita de al lado de los menus*/
+	content: "\2228";
+	padding-left: 10px;
+}
+
+.menu ul{
+	padding-top: 7px;
+}
+
+header{
+	padding: 20px 0 20px 0;
+}
+
+header .logo-desktop{
+	width: 124px;
+	float: left;	
+}
+
+header .logo-mobile{ 
+	width: 124px;
+	float: left;
+	margin-left: -150px;
+	display: none; /*al logo del modo movil le pongo un display none para que no se muestre en la version desktop y en el media query lo hago al reves*/	
+}
+
+hr.linea {
+    border: 0;
+    height: 0.5px;
+    margin: 0 0 0 0;
+    background: white;
+    position: relative; /*position absolute valdria pero tendria que darle un width porque si no no se ve*/
+    top: 75px;
+}
+
+button.button-primary{
+	background-color: white !important;
+	color: #222222;
+	border-color: white;
+	border-radius: 25px;
+	font-family: 'big-medium';
+	font-size: 12px;
+	text-transform: lowercase;
+	padding: 0 10px;
+}
+
+button.button-primary:hover{
+	background-color: white !important;
+	color: #222222;
+	border-color: white;
+	border-radius: 25px;
+	font-family: 'big-medium';
+	font-size: 12px;
+	text-transform: lowercase;
+	padding: 0 10px;
+}
+
+button{
+	background-color: transparent !important;
+	color: white;
+	border-color: white;
+	border-radius: 25px;
+	font-family: 'big-medium';
+	font-size: 12px;
+	text-transform: lowercase;
+	padding: 0 30px;
+}
+
+button:hover{
+	background-color: transparent !important;
+	color: white;
+	border-color: white;
+	border-radius: 25px;
+	font-family: 'big-medium';
+	font-size: 12px;
+	text-transform: lowercase;
+	padding: 0 30px;
+}
+
+										/*HERO*/
+
+
+.hero{
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.48) 0%, rgba(28,7,5,0) 12%, rgba(231,56,39,0) 100%), url(../imgs/hero.jpg); /*gradiente + imagen separada por coma y asi pongo un gradiente sobre la imagen usando dos backgrounds*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 60% center; /*para centrar la foto al hueco y se mueva mas suavemente, asi cuando hacemos la ventana mas pequeña es más fluido*/
+	height: 600px;
+}
+
+.hero h2{
+	font-size: 40px;
+	color: #009cde;
+	letter-spacing: -1px;
+	font-family: 'big-light'; 
+}
+
+.hero p{
+	font-family: 'small-regular';
+	font-size: 18px;
+	color: #2c2e2f;
+	margin-bottom: 45px;
+	margin-top: -25px;
+}
+
+.hero h3{
+	font-family: 'small-regular';
+	font-weight: bold;
+	font-size: 15px;
+	color: #0070ba;
+	padding-top: 25px;
+}
+
+.cajaizquierda a{
+	display: inline-block; /*transformo el <a> en inline-block para asi poder darle un % con un width y que cuando haga pequeña la ventana el boton se escale*/
+	width: 50%;
+	text-decoration: none;
+	font-family: 'small-regular';
+	font-weight: bold;
+	font-size: 15px;
+	color: white;
+	text-align: center;
+	background-color: #0070ba;
+	padding: 10px 20px 10px 20px;
+	border-radius: 35px;
+	
+}
+
+.cajaizquierda a:hover{
+	background-color: #005EA6;
+}
+
+.cajaizquierda {
+	margin-top: 150px;
+}
+
+.cajaderecha img{
+	width: 600px;
+	position: absolute;
+	top: 250px;
+}
+
+
+											/*SECTION 2*/
+
+.pagos {
+	text-align: center;
+	padding-bottom: 90px; /*con este padding a la section lo que hago es aumentar el tamaño de la section hacia abajo y poder tener mas espacio en blanco*/
+}
+
+.pagos img{
+	padding-bottom: 40px;
+	padding-top: 60px;
+}
+
+.pagos h2{
+	font-size: 40px;
+	color: #2c2e2f;
+	letter-spacing: -1px;
+	font-family: 'big-light';
+	padding-top: 120px; 
+}
+
+.pagos h3{
+	font-family: 'big-light';
+	font-size: 28px;
+	color: #2c2e2f;
+}
+
+.pagos p{
+	font-family: 'small-regular';
+	font-size: 14px;
+	color: #2c2e2f;
+	margin-top: -15px;
+}
+	
+.pagos a{
+	text-decoration: none;
+	font-family: 'small-regular';
+	font-weight: bold;
+	font-size: 13px;
+	color: #0070ba;
+}
+
+											/*SECTION 2*/
+
+
+.degradado {
+	text-align: center;
+	background-color: #009cde;
+    background-image: radial-gradient(circle farthest-side at center bottom, #009cde, #003087 125%);
+    padding-bottom: 60px; /*con este padding a la section lo que hago es aumentar el tamaño de la section hacia abajo y poder tener mas espacio en blanco*/
+}
+
+.degradado h2{
+	font-size: 40px;
+	color: white;
+	letter-spacing: -1px;
+	font-family: 'big-light';
+	padding-top: 120px; 
+	padding-bottom: 50px;
+}
+
+.degradado h3{
+	font-family: 'big-light';
+	font-size: 25px;
+	color: white;
+	height: 80px; /*si le doy un height a estos titulos me van a ocupar todas las cajas lo mismo y asi se me igualan los parrafos de abajo a la misma altura*/
+}
+
+.degradado p{
+	font-family: 'small-regular';
+	font-size: 12px;
+	color: white;
+	padding-top: 20px;
+}
+
+
+
+											/*MEDIAQUERIES*/
+
+
+@media screen and (max-width: 550px) {
+
+
+.cajaderecha img{
+	display: none; /*asi escondes la imagen cuando estes en el movil*/
+}
+
+.hero{
+	text-align: center;
+}
+
+header .logo-desktop{
+	display: none; /*al logo del modo desktop le pongo un display none para que no se muestre en la version mobile y en el menu original lo hago al reves*/	
+}
+
+header .logo-mobile{ 
+	width: 100px; /*le doy un width porque sino no funciona margin 0 auto*/
+	margin: 0 auto;
+	float: none; /*pongo float none para anular el float left y que asi funcione el margin auto porque si no no funciona*/
+	display: block; /*tengo que volver a poner un display para que se pueda volver a mostrar porque si no no se muestra por haber escrito anteriormente un display none*/	
+}
+
+}
